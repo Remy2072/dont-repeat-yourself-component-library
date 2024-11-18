@@ -24,7 +24,7 @@
 <style>
     footer {
         width: 100%;
-        background-color: var(--purple);
+        background-color: transparent;
         padding: clamp(1rem, calc(100vw / 24), 5rem) clamp(1rem, calc(100vw / 24), 5rem) 0 calc(clamp(1rem, calc(100vw / 24), 5rem) * 2);
         display: flex;
         flex-direction: column;
