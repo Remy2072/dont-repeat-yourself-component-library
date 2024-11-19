@@ -11,7 +11,7 @@
 <header>
 	<nav>
 		<ul>
-			<li><Svg name="hva-fdnd" /></li>
+			<li><Svg name="hva-fdnd"/></li>
 			<li><button id="menu-btn" onclick={toggleMenu}>MENU</button></li>
 		</ul>
 		<ul id="menu-content" class:menu-open={menuOpen}>
@@ -19,13 +19,14 @@
 			<li>We Love Webs</li>
 			<li>FDND Agency</li>
 			<li>Archief</li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="https://www.google.nl">Contact</a></li>
 		</ul>
 	</nav>
 </header>
 
 <style>
 	header {
+
 		position: relative;
 		padding-top: 1rem;
 		margin-bottom: -1px;
@@ -49,7 +50,7 @@
 		align-items: center;
 
 		@media (min-width: 1024px) {
-			width: 20%;
+			width: 25%;
 			justify-content: center;
 		}
 	}
@@ -109,12 +110,12 @@
 
 	header nav ul:nth-child(2) {
 		padding: 3rem 0;
-		width: 100%;
+		width: calc(100% + 2rem);
 		height: 100vh;
 		background-color: #000000aa;
 		position: absolute;
 		top: 0;
-		right: -100%;
+		right: calc(-3rem - 100%);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -122,10 +123,6 @@
 		transition: 450ms cubic-bezier(0, 0.62, 0.57, 1.02);
 		z-index: 2;
 		font-size: 1rem;
-		
-		@media (min-width: 768px) {
-			border-radius: 30px;
-		}
 
 		@media (min-width: 1024px) {
 			border-radius: 2.5rem 2.5rem 0 0;
@@ -136,12 +133,13 @@
 			flex-direction: row;
 			justify-content: space-between;
 			height: 100%;
-			width: 80%;
+			width: 75%;
 			padding: 2rem 8%;
+			font-size: .9rem;
 		}
 
 		@media (min-width: 1440px) {
-			font-size: 1.5rem;
+			font-size: 1rem;
 			padding: 2rem 14%;
 		}
 	}
@@ -150,7 +148,7 @@
 		content: '';
 		position: absolute;
 		left: 0rem;
-		bottom: 1px;
+		bottom: -1px;
 		transform: translateX(-100%);
 		width: var(--radius);
 		height: var(--radius);
@@ -158,7 +156,7 @@
 	}
 
 	header nav ul:nth-child(2).menu-open {
-		right: 0;
+		right: -1rem;
 	}
 
 	header nav ul:nth-child(2) li {
