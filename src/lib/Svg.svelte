@@ -1,5 +1,11 @@
 <script>
-    export let name = ''
+  /**
+   * @typedef {Object} Props
+   * @property {string} [name]
+   */
+
+  /** @type {Props} */
+  let { name = '' } = $props();
   </script>
   
   {#if name == 'footer-svg'}

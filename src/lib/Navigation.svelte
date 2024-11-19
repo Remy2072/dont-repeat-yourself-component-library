@@ -1,7 +1,7 @@
 <script>
 	import { Svg } from '$lib';
 
-	let menuOpen = false;
+	let menuOpen = $state(false);
 
 	function toggleMenu() {
 		menuOpen = !menuOpen;
@@ -12,7 +12,7 @@
 	<nav>
 		<ul>
 			<li><Svg name="hva-fdnd" /></li>
-			<li><button id="menu-btn" on:click={toggleMenu}>MENU</button></li>
+			<li><button id="menu-btn" onclick={toggleMenu}>MENU</button></li>
 		</ul>
 		<ul id="menu-content" class:menu-open={menuOpen}>
 			<li>Home</li>

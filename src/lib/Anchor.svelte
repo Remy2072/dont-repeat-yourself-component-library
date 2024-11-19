@@ -1,7 +1,13 @@
 <script>
-	export let anchorLink = '#';
-	export let anchorText = 'Button text';
-	export let anchorLabel = 'Enter Aria-Label';
+    /**
+     * @typedef {Object} Props
+     * @property {string} [anchorLink]
+     * @property {string} [anchorText]
+     * @property {string} [anchorLabel]
+     */
+
+    /** @type {Props} */
+    let { anchorLink = '#', anchorText = 'Button text', anchorLabel = 'Enter Aria-Label' } = $props();
 </script>
 
 <a href="{anchorLink}" aria-label="{anchorLabel}">{anchorText}</a>
