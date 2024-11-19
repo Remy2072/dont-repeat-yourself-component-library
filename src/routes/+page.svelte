@@ -1,10 +1,13 @@
 <script>
-    import { Footer } from "$lib";
+    import { Footer, Navigation } from "$lib";
 </script>
+
+<Navigation />
 
 <div class="container">
     <!-- Componenten -->
 </div>
+
 
 <Footer />
 
@@ -19,7 +22,7 @@
 
     @media screen and (min-width: 768px) {
         .container {
-            border-radius: 30px;
+            border-radius: 30px 0 30px 30px;
             padding: 0 3.125rem 0 3.125rem;
         }
     }
