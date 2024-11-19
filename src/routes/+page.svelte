@@ -22,14 +22,14 @@
 
     @media screen and (min-width: 768px) {
         .container {
-            border-radius: 30px 0 30px 30px;
+            border-radius: 30px;
             padding: 0 3.125rem 0 3.125rem;
         }
     }
 
     @media screen and (min-width: 1024px) {
         .container {
-            border-radius: 2.5rem;
+            border-radius: 2.5rem 0 2.5rem 2.5rem;
             padding: 0 6.25rem 0 6.25rem;
         }
     }
