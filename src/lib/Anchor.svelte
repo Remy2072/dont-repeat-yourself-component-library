@@ -5,6 +5,7 @@
      * @property {string} [anchorText] - The visible text for the anchor.
      * @property {string} [anchorLabel] - The aria-label for accessibility.
      * @property {string} [backgroundColor] - The background color for the anchor.
+     * @property {string} [padding] - The background color for the anchor.
      */
   
     // Using `export let` to declare props with default values
@@ -12,14 +13,20 @@
     export let anchorText = 'Button text'; // Default text
     export let anchorLabel = 'Enter Aria-Label'; // Default aria-label
     export let backgroundColor = 'white'; // Default background color
+    export let padding = '.75rem'; // Default background color
   </script>
   
+  <!-- Apply the dynamic style and props -->
+  <a href={anchorLink} aria-label={anchorLabel} style="--anchor-bg-color: {backgroundColor}; --anchor-padding: {padding}">
+    {anchorText}
+  </a>
+
   <style>
     a {
       position: relative;
       z-index: 1;
       border: 1px solid var(--blue);
-      padding: .75rem;
+      padding: var(--anchor-padding);
       background-color: var(--anchor-bg-color);
       border-radius: 10px;
       color: var(--blue);
@@ -52,8 +59,4 @@
     }
   </style>
   
-  <!-- Apply the dynamic style and props -->
-  <a href={anchorLink} aria-label={anchorLabel} style="--anchor-bg-color: {backgroundColor}">
-    {anchorText}
-  </a>
   

@@ -1,18 +1,11 @@
 <script>
-    import { Footer, Navigation, Anchor } from "$lib";
-  
-  </script>
+    import { Footer, Navigation, Heading } from "$lib";
+</script>
   
   <Navigation />
   
   <div class="container">
-    <!-- Components -->
-    <Anchor 
-    anchorLink="https://fdnd.nl/"
-    anchorText="Aankomende"
-    anchorLabel="Link naar fdnd.nl"
-    backgroundColor="var(--green)" 
-  />
+    <Heading />
   
   </div>
   
