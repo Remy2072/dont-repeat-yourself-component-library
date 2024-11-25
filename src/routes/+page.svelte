@@ -38,5 +38,5 @@
         padding: 1rem 9.375rem 4rem;
       }
     }
-  </style>
-  
+  }
+</style>
