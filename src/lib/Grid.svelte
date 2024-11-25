@@ -3,7 +3,9 @@
 </script>
 
 <section>
-  <img src="/img/wlw.png" alt="">
+  <picture>
+    <img src="/img/wlw.png" alt="">
+  </picture>
   <Card></Card>
   <Card></Card>
   <Card></Card>
@@ -28,17 +30,28 @@
     
     @media (min-width: 1440px) {
       grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, calc(185px + .75rem)) repeat(2, 1fr);
 		}
   }
 
-  section img {
+  section picture {
     width: 100%;
-    border-radius: 25px;
-    border: 2px solid #e9e0e965;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 
     @media (min-width: 1024px) {
       grid-row: 1 / 3;
       grid-column: 1 / 3;
 		}
+  }
+
+  section picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 2px solid #e9e0e965;
   }
 </style>
