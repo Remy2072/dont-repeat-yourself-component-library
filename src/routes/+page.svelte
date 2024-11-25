@@ -1,12 +1,12 @@
 <script>
-    import { Footer, Navigation, Heading } from "$lib";
+    import { Footer, Navigation, Heading, Grid } from "$lib";
 </script>
   
   <Navigation />
   
   <div class="container">
     <Heading />
-  
+    <Grid />
   </div>
   
   <Footer />
@@ -16,27 +16,26 @@
       width: 100%;
       background: var(--container-gradient);
       border-radius: 24px;
-      padding: 0 2.188rem 0 2.188rem;
-      height: 100vh;
+      padding: 50px 2.188rem;
     }
   
     @media screen and (min-width: 768px) {
         .container {
             border-radius: 30px;
-            padding: 0 3.125rem 0 3.125rem;
+            padding: 1rem 3.125rem 2rem;
         }
     }
   
     @media screen and (min-width: 1024px) {
         .container {
             border-radius: 2.5rem 0 2.5rem 2.5rem;
-            padding: 0 6.25rem 0 6.25rem;
+            padding: 1rem 6.25rem 4rem;
         }
     }
   
     @media screen and (min-width: 1440px) {
       .container {
-        padding: 0 9.375rem 0 9.375rem;
+        padding: 1rem 9.375rem 4rem;
       }
     }
   </style>

@@ -32,7 +32,6 @@
 <style>
     section {
         position: relative;
-        padding-top: 50px;
     }
 
     .heading::after {
