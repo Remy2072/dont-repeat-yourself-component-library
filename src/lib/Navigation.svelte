@@ -8,7 +8,6 @@
   }
 </script>
 
-<header>
   <nav>
     <ul>
       <li><Svg name="hva-fdnd" /></li>
@@ -22,17 +21,13 @@
       <li><a href="https://www.google.nl">Contact</a></li>
     </ul>
   </nav>
-</header>
 
 <style>
-  header {
+  nav {
+    width: 100%;
     position: relative;
     padding-top: 1rem;
     margin-bottom: -1px;
-  }
-
-  header nav {
-    width: 100%;
 
     @media (min-width: 1024px) {
       display: flex;
@@ -41,7 +36,7 @@
     }
   }
 
-  header nav ul:nth-child(1) {
+  nav ul:nth-child(1) {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -53,7 +48,7 @@
     }
   }
 
-  header nav ul:nth-child(1) li:nth-child(2) {
+  nav ul:nth-child(1) li:nth-child(2) {
     z-index: 5;
 
     @media (min-width: 1024px) {
@@ -61,7 +56,7 @@
     }
   }
 
-  header nav ul:nth-child(1) button::before {
+  nav ul:nth-child(1) button::before {
     content: "";
     z-index: -1;
     position: absolute;
@@ -74,7 +69,7 @@
     top: 2px;
   }
 
-  header nav ul:nth-child(1) button {
+  nav ul:nth-child(1) button {
     position: relative;
     border: 1px solid var(--blue);
     padding: 0.5rem 1rem;
@@ -86,27 +81,27 @@
     cursor: pointer;
   }
 
-  header nav ul:nth-child(1) button:hover {
+  nav ul:nth-child(1) button:hover {
     right: 1px;
     top: 1px;
   }
 
-  header nav ul:nth-child(1) button:hover::before {
+  nav ul:nth-child(1) button:hover::before {
     right: 1px;
     top: 1px;
   }
 
-  header nav ul:nth-child(1) button:active {
+  nav ul:nth-child(1) button:active {
     right: 2px;
     top: 2px;
   }
 
-  header nav ul:nth-child(1) button:active::before {
+  nav ul:nth-child(1) button:active::before {
     right: 1px;
     top: 1px;
   }
 
-  header nav ul:nth-child(2) {
+  nav ul:nth-child(2) {
     padding: 3rem 0;
     width: calc(100% + 2rem);
     height: 100vh;
@@ -148,7 +143,7 @@
   }
 
   @media (min-width: 1024px) {
-    header nav ul:nth-child(2)::before {
+    nav ul:nth-child(2)::before {
       content: "";
       position: absolute;
       left: 0rem;
@@ -160,11 +155,11 @@
     }
   }
 
-  header nav ul:nth-child(2).menu-open {
+  nav ul:nth-child(2).menu-open {
     right: -1rem;
   }
 
-  header nav ul:nth-child(2) li {
+  nav ul:nth-child(2) li {
     color: #fff;
     transition: 300ms;
     list-style-type: none;
@@ -174,7 +169,7 @@
     }
   }
 
-  header nav ul:nth-child(2) li a {
+  nav ul:nth-child(2) li a {
     color: #fff;
     transition: 300ms;
     text-decoration: none;
