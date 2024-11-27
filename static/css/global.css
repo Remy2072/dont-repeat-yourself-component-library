@@ -39,7 +39,7 @@
 body {
     background: var(--body-gradient);
     padding: 0px 1rem 0px 1rem;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 @media screen and (min-width: 768px) {
