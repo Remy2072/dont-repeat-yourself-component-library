@@ -36,10 +36,14 @@
     font-family: "Open Sans", sans-serif;
 }
 
+html, body {
+    max-width: 100vh;
+    overflow-x: hidden;
+}
+
 body {
     background: var(--body-gradient);
     padding: 0px 1rem 0px 1rem;
-    overflow-x: hidden;
 }
 
 @media screen and (min-width: 768px) {
