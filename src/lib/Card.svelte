@@ -1,11 +1,19 @@
+<script>
+	  export let speaker = '';
+	  export let title = '';
+	  export let shortDesc = '';
+	  export let time = '';
+	  export let date = '';
+</script>
+
 <article>
-	<a href="/google.com" aria-label="Event: Vasilis van Gemert, WE ❤️ WEB, Spotify lezing at 13:00 on 07-09">
-		<h2>Emiel van Betsbrugge</h2>
-		<h3>WE ❤️ WEB</h3>
-		<p>Pitch tot productie</p>
+	<a href="#/" aria-label="Event: Vasilis van Gemert, WE ❤️ WEB, Spotify lezing at 13:00 on 07-09">
+		<h2>{speaker}</h2>
+		<h3>{title}</h3>
+		<p>{shortDesc}</p>
 		<div>
-			<time datetime="13:00">13:00 - 14:00</time>
-			<time datetime="07-09-2024">22 - 09</time>
+			<time datetime="13:00">{time}</time>
+			<time datetime="07-09-2024">{date}</time>
 		</div>
 	</a>
 </article>
