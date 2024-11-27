@@ -46,6 +46,7 @@
 
 	h2 {
 		color: var(--purple);
+		font-size: 1.4rem;
 	}
 
 	h3 {
